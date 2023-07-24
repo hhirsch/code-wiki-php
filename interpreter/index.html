@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Interpreter - PHP Code Wiki</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Interpreter";
+        var mkdocs_page_input_path = "interpreter.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> PHP Code Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Interpreter</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#zend">Zend</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tsrm">TSRM</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ext">ext</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sapi">sapi</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#main">main</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tsrm_1">TSRM</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#zendengine3">ZendEngine3</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#win32">win32</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">PHP Code Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>Interpreter</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="php-interpreter">PHP Interpreter</h1>
+<p>The source code for the PHP interpreter can be found on <a href="https://github.com/php/php-src/">github</a>.</p>
+<p>You'll find the following directories:</p>
+<h2 id="zend">Zend</h2>
+<p>The core of the PHP language. It handles parsing, execution, and compilation of PHP code.</p>
+<h2 id="tsrm">TSRM</h2>
+<p>Stands for Thread Safe Resource Manager. It contains code related to thread safety and resource management in the PHP interpreter.</p>
+<h2 id="ext">ext</h2>
+<p>PHP's standard extension modules like gd or mysql.</p>
+<h2 id="sapi">sapi</h2>
+<p>Server API modules. Each subdirectory represents a particular server interface. For example for apache or the command line.</p>
+<h2 id="main">main</h2>
+<p>This directory contains the main PHP interpreter loop, which handles the initialization, configuration, and execution of PHP scripts.</p>
+<h2 id="tsrm_1">TSRM</h2>
+<p>Similar to the TSRM directory mentioned earlier, this directory contains code related to thread safety and resource management but with non-thread-safe builds.</p>
+<h2 id="zendengine3">ZendEngine3</h2>
+<p>Zend Engine 3, the core of PHP 7 and later versions. </p>
+<h2 id="win32">win32</h2>
+<p>Windows specific code and files</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
