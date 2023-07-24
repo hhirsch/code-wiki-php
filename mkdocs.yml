@@ -1,0 +1,7 @@
+site_name: PHP Code Wiki
+markdown_extensions:
+    - pymdownx.snippets
+nav:
+    - Home: index.md
+    - Interpreter: interpreter.md  
+theme: readthedocs
